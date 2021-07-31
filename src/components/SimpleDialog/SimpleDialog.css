@@ -1,0 +1,28 @@
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  flex: 1;
+  text-align: center;
+}
+
+.statistic-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 1rem 3rem;
+}
+.statistic-row > p {
+  text-align: right;
+}
+@media only screen and(max-width : 600px) {
+  .dialog-container {
+    width: inherit;
+  }
+  .statistic-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}

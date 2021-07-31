@@ -1,38 +1,99 @@
 .App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 3rem; */
+}
+.app-bar {
+  margin-bottom: 1rem;
+}
+.toolbar {
+  display: flex;
+  justify-content: center;
+}
+.app-bar-typography {
+  display: flex;
+  justify-content: center;
+}
+.movie-name-container {
+  height: 200px;
+  width: 200px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current-movie-div {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  padding: 0 1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-element {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 1rem;
+}
+.lives-counter {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.currentScore {
+  margin-left: 1rem;
+  display: flex;
+}
+.current-statistic-container {
+  display: flex;
+  /* max-width: 200px; */
+  justify-content: space-around;
+}
+.high-score-cotnainer {
+  margin-left: 1rem;
+  display: flex;
+}
+.lives-span {
+  color: blue;
+}
+.high-score-span {
+  color: purple;
+}
+.number-of-guesses-span {
+  color: green;
+}
+.input-error {
+  color: red;
+}
+.statistic-button {
+  color: green !important;
+  border: 1px solid green !important;
+}
+.MuiButton-outlined {
+  margin: 0.5rem !important;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.buttons-container > button {
+  width: 120px;
+  height: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 700px) {
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .buttons-container > button {
+    width: 120px;
+    height: 60px;
   }
 }
